@@ -1,0 +1,46 @@
+@use "../../../styles/media" as *;
+
+.LoginButton {
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  border: none;
+  border-radius: var(--border-radius-m);
+
+  @include tablet {
+    padding: 6px 6px;
+  }
+
+  .LoginButtonLable {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    display: block;
+
+    @include tablet {
+      display: none;
+      padding: 6px;
+    }
+  }
+
+  .icon {
+    display: inline-flex;
+
+    svg {
+      fill: var(--color-light);
+    }
+  }
+
+  &:hover {
+    background-color: var(--color-light);
+    color: var(--color-accent);
+
+    .icon svg {
+      fill: var(--color-accent);
+    }
+  }
+}
