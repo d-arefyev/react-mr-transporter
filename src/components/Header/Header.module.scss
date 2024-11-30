@@ -20,9 +20,9 @@ header {
   display: block;
   object-fit: contain;
 
-  // @include tablet {
-  //   width: 240px;
-  // }
+  @include tablet {
+    width: 240px;
+  }
 }
 
 .headerRight {
