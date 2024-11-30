@@ -73,6 +73,11 @@ header {
   }
 }
 
+.activeLink {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
 @include mobile {
   .navBlock {
     display: none;
@@ -147,6 +152,7 @@ header {
 
 .mobileMenuList {
   text-align: center;
+  font-size: 24px;
 }
 
 .mobileMenuItem {
