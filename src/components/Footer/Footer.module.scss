@@ -1,0 +1,125 @@
+@use "../../styles/media" as *;
+
+footer {
+  background-color: var(--color-primary);
+  border-top: 2px solid var(--color-accent);
+  padding: 40px 0 25px;
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+
+  .footerLogo {
+    width: 340px;
+    height: auto;
+    margin-right: 15px;
+    display: block;
+    object-fit: contain;
+
+    @include tablet {
+      width: 240px;
+    }
+  }
+
+  .footerInfo {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+
+    @include tablet {
+      justify-content: space-between;
+    }
+
+    .section {
+      h4 {
+        color: var(--color-gray);
+        margin: 0 0 8px;
+      }
+
+      .text {
+        color: var(--color-gray);
+        font-style: normal;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: column;
+        color: var(--color-gray);
+        gap: 8px;
+      }
+    }
+  }
+
+  .newsletter {
+    // min-width: 240px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 40px;
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    h4 {
+      color: var(--color-gray);
+      margin: 0 0 8px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+
+      .formGroup {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          color: var(--color-gray);
+        }
+
+        // .checkbox {
+        //   margin-top: 0.5rem;
+        //   display: flex;
+        //   align-items: center;
+
+        //   input {
+        //     margin-right: 0.5rem;
+        //   }
+        // }
+      }
+
+      .error {
+        color: var(--color-error);
+      }
+    }
+  }
+
+  .newsletterButtons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .soc1alIcons {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: var(--color-gray);
+  font-size: 14px;
+  margin-top: 40px;
+}

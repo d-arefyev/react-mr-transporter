@@ -1,0 +1,44 @@
+@use "../../../styles/media" as *;
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 18px;
+  width: 100%;
+  border-radius: var(--border-radius-m);
+  border: none;
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  white-space: nowrap;
+
+  &:hover {
+    background-color: var(--color-light);
+    color: var(--color-accent);
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-light);
+    }
+  }
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+}

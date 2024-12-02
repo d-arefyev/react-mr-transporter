@@ -1,0 +1,32 @@
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkboxBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+  }
+
+  .checkboxBoxChecked {
+    background-color: var(--color-accent);
+  }
+
+  .checkboxIcon {
+    stroke: var(--color-light);
+  }
+
+  .checkboxLabel {
+    color: var(--color-gray);
+  }
+}

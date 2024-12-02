@@ -10,22 +10,27 @@ import PickupPage from "./pages/Pickup/PickupPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import AccountPage from "./pages/Account/AccountPage";
 
+import styles from './styles/App.module.scss';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="pickup" element={<PickupPage />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="account" element={<AccountPage />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <div className={styles.appContainer}>
+      <BrowserRouter>
+        <Header />
+        <main className={styles.appContent}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="pickup" element={<PickupPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="account" element={<AccountPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
+    </div >
   );
 }
 

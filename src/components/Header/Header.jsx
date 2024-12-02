@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import mainLogo from '../../assets/icons/main-logo.svg';
 import cartIcon from '../../assets/icons/cart.svg';
@@ -31,9 +31,9 @@ const Header = ({ cartItems = [] }) => {
       <div className="container">
         <div className={styles.headerContent}>
           {/* Логотип */}
-          <NavLink to="/">
+          <Link to="/">
             <img src={mainLogo} alt="MR.TRANSPORTER" className={styles.mainLogo} />
-          </NavLink>
+          </Link>
 
           <div className={styles.headerRight}>
             {/* Навигация */}
