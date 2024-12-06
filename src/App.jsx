@@ -27,7 +27,7 @@ function App() {
             <Route path="contact" element={<ContactPage />} />
             <Route path="account" element={<AccountPage />} />
           </Routes>
-        </main>
+          </main>
         <Footer />
       </BrowserRouter>
     </div >

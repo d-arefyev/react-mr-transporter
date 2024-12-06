@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
-import mainLogo from '../../assets/icons/main-logo.svg';
-import cartIcon from '../../assets/icons/cart.svg';
+import mainLogo from '/logo-main.svg';
+import cartIcon from '/icons/cart.svg';
 import LoginButton from '../Buttons/LoginButton/LoginButton';
 
 import styles from './Header.module.scss';

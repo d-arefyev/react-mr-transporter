@@ -4,6 +4,7 @@ footer {
   background-color: var(--color-primary);
   border-top: 2px solid var(--color-accent);
   padding: 40px 0 25px;
+  z-index: 1;
 
   .footerContent {
     display: flex;

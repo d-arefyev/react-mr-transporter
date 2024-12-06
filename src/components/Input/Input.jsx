@@ -14,11 +14,11 @@ const Input = ({
   error = "",
 }) => {
   return (
-    <div className={styles["input-wrapper"]}>
+    <div className={styles["inputWrapper"]}>
       {label && (
         <label
           htmlFor={name}
-          className={`${styles["input-label"]} ${labelClassName}`}
+          className={`${styles["inputLabel"]} ${labelClassName}`}
         >
           {label}
         </label>
@@ -31,9 +31,9 @@ const Input = ({
         onChange={onChange}
         placeholder={placeholder}
         required={required}
-        className={`${styles["input-field"]} ${className}`}
+        className={`${styles["inputField"]} ${className}`}
       />
-      {error && <span className={styles["input-error"]}>{error}</span>}
+      {error && <span className={styles["inputError"]}>{error}</span>}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState, } from 'react';
 import { Link } from 'react-router-dom';
 
-import footerLogo from '../../assets/icons/logo-gray.svg';
+import footerLogo from '/logo-gray.svg';
 // import sendIcon from '../../assets/icons/send.svg';
 import Input from "../Input/Input";
 import AccentButton from "../Buttons/AccentButton/AccentButton";

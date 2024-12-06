@@ -1,9 +1,16 @@
 .appContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  // max-width: 1440px;
+  margin-inline: auto;
+  background-color: var(--color-light);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .appContent {
   flex: 1;
+  position: relative;
 }
+

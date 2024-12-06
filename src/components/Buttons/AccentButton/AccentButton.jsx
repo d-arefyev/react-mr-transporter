@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./AccentButton.module.scss";
 
-const Button = ({
+const AccentButton = ({
   type = "button",          // Тип кнопки: "button", "submit", "reset"
   label = "",               // Текст кнопки
   icon = null,              // Иконка в виде JSX-элемента
@@ -39,5 +39,5 @@ const Button = ({
   );
 };
 
-export default Button;
+export default AccentButton;
 

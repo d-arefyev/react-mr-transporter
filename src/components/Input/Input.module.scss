@@ -1,26 +1,29 @@
-.input-wrapper {
+@use "../../styles/media" as *;
+
+.inputWrapper {
   display: flex;
   flex-direction: column;
 }
 
-.input-label {
+.inputLabel {
   font-size: 14px;
-  color: var(--color-dark);
   margin-bottom: 4px;
 }
 
-.input-field {
+.inputField {
+  width: 100%;
   padding: 10px 12px;
   font-size: 16px;
   border: 1px solid var(--color-gray);
   border-radius: var(--border-radius-s);
+  background-color: var(--color-light);
 
   &::placeholder {
     color: var(--color-light-gray);
   }
 }
 
-.input-error {
+.inputError {
   color: red;
   font-size: 12px;
   margin-top: 4px;
