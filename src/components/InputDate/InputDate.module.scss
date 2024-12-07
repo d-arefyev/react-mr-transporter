@@ -31,12 +31,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  &::placeholder {
-    color: red !important; /* Цвет текста плейсхолдера */
-    font-size: 14px !important; /* Размер шрифта */
-    font-style: italic !important; /* Стиль шрифта */
-  }
-
   &.dateSelected {
     color: var(--color-dark);
   }

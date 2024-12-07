@@ -1,0 +1,25 @@
+@use "../../styles/media" as *;
+
+.AboutPage {
+  position: relative;
+  width: 100%;
+
+  @include mobile {
+  }
+}
+
+.pageBg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 720px;
+
+  @include tablet {
+    height: 580px;
+  }
+
+  @include mobile {
+    height: 800px;
+  }
+}

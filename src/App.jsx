@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import SOSchat from "./components/SOSchat/SOSchat";
 
 import HomePage from "./pages/Home/HomePage";
 import AboutPage from "./pages/About/AboutPage";
 import PickupPage from "./pages/Pickup/PickupPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import AccountPage from "./pages/Account/AccountPage";
+
 
 import styles from './styles/App.module.scss';
 
@@ -29,6 +31,7 @@ function App() {
           </Routes>
           </main>
         <Footer />
+      <SOSchat />
       </BrowserRouter>
     </div >
   );

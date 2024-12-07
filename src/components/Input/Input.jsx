@@ -6,6 +6,7 @@ const Input = ({
   type = "text",
   value,
   onChange,
+  onKeyDown,
   placeholder = "",
   className = "",
   labelClassName = "",
@@ -29,6 +30,7 @@ const Input = ({
         type={type}
         value={value}
         onChange={onChange}
+        onKeyDown={onKeyDown}
         placeholder={placeholder}
         required={required}
         className={`${styles["inputField"]} ${className}`}
@@ -39,6 +41,7 @@ const Input = ({
 };
 
 export default Input;
+
 
 
 
