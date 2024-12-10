@@ -16,12 +16,11 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-image: url('/image/app-bg.jpg');
+  background-image: url("/image/app-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   background-attachment: fixed;
-  
 }
 
 h1,
@@ -116,6 +115,7 @@ a {
 }
 
 .pageBg {
+  background-image: url("/image/page-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,5 +1,4 @@
 import React from 'react';
-import pageBg from '/image/page-bg.jpg';
 
 import styles from "./PickupPage.module.scss";
 
@@ -13,7 +12,7 @@ const PickupPage = () => {
           </div>
         </div>
       </div>
-      <div className="pageBg" style={{ backgroundImage: `url(${pageBg})` }}></div>
+      <div className="pageBg"></div>
     </div>
   );
 };
