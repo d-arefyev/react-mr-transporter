@@ -1,0 +1,27 @@
+@use "../../styles/media" as *;
+
+.impressum {
+  max-width: 600px;
+  h1 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+.impressum article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  address {
+    font-style: normal;
+  }
+
+  a {
+    color: var(--color-dark);
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

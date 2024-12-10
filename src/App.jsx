@@ -10,6 +10,11 @@ import AboutPage from "./pages/About/AboutPage";
 import PickupPage from "./pages/Pickup/PickupPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import AccountPage from "./pages/Account/AccountPage";
+import ImpressumPage from "./pages/Impressum/ImpressumPage";
+import FAQPage from "./pages/FAQ/FAQPage";
+import AGBPage from "./pages/AGB/AGBPage";
+import CookiesPage from "./pages/Cookies/CookiesPage";
+import DatenschutzPage from "./pages/Datenschutz/DatenschutzPage";
 
 
 import styles from './styles/App.module.scss';
@@ -28,6 +33,11 @@ function App() {
             <Route path="pickup" element={<PickupPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="account" element={<AccountPage />} />
+            <Route path="impressum" element={<ImpressumPage />} />
+            <Route path="FAQ" element={<FAQPage />} />
+            <Route path="AGB" element={<AGBPage />} />
+            <Route path="Cookies" element={<CookiesPage />} />
+            <Route path="Datenschutz" element={<DatenschutzPage />} />
           </Routes>
           </main>
         <Footer />
