@@ -15,6 +15,8 @@ import FAQPage from "./pages/FAQ/FAQPage";
 import AGBPage from "./pages/AGB/AGBPage";
 import CookiesPage from "./pages/Cookies/CookiesPage";
 import DatenschutzPage from "./pages/Datenschutz/DatenschutzPage";
+import CartPage from "./pages/Cart/CartPage";
+import NotFoundPage from "./pages/NotFound/NotFoundPage";
 
 
 import styles from './styles/App.module.scss';
@@ -36,8 +38,10 @@ function App() {
             <Route path="impressum" element={<ImpressumPage />} />
             <Route path="FAQ" element={<FAQPage />} />
             <Route path="AGB" element={<AGBPage />} />
-            <Route path="Cookies" element={<CookiesPage />} />
-            <Route path="Datenschutz" element={<DatenschutzPage />} />
+            <Route path="cookies" element={<CookiesPage />} />
+            <Route path="datenschutz" element={<DatenschutzPage />} />
+            <Route path="cart" element={<CartPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
           </main>
         <Footer />
