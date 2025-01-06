@@ -1,8 +1,13 @@
-# React + Vite
+# Mr.Transporter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Ich wurde eingeladen, an diesem Projekt zu arbeiten, um das visuelle Konzept zu erstellen und die Benutzeroberfläche mit React.js + Vite zu entwickeln (In der Entwicklung).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Skills
+
+•	Erstellung des Designs in Figma
+•	Aufbau der Benutzeroberfläche und der gesamten Anwendungsarchitektur
+
+[Live Demo](https://react-mr-transporter.vercel.app/)
+
