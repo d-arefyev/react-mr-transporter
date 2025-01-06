@@ -156,7 +156,7 @@ const Footer = () => {
         </div>
       </div>
       <span className={styles.copyright}>
-        Copyright © Mr. Transporter GmbH 2004
+        Copyright © Mr. Transporter GmbH 2024
       </span>
     </footer>
   );

@@ -1,6 +1,6 @@
 /* Normalise -------------------------------------------------- */
 /**
-  Нормализация блочной модели
+  Normalization of the block model
  */
  *,
  *::before,
@@ -9,26 +9,23 @@
  }
  
  /**
-     Убираем внутренние отступы слева тегам списков,
-     у которых есть атрибут class
-    */
+  Remove internal left margins for list tags that have a class attribute
+  */
  :where(ul, ol):where([class]) {
    padding-left: 0;
  }
  
  /**
-     Убираем внешние отступы body и двум другим тегам,
-     у которых есть атрибут class
-    */
+  Remove the outer padding from the body and two other tags that have the class attribute.
+  */
  body,
  :where(blockquote, figure):where([class]) {
    margin: 0;
  }
  
  /**
-     Убираем внешние отступы вертикали нужным тегам,
-     у которых есть атрибут class
-    */
+  We remove the outer vertical indents for the necessary tags that have the class attribute
+  */
  :where(h1,
    h2,
    h3,
@@ -53,18 +50,16 @@
  }
  
  /**
-     Убираем стандартный маркер маркированному списку,
-     у которого есть атрибут class
-    */
+  Remove the standard marker from a bulleted list that has a class attribute
+  */
  :where(ul[class]) {
    list-style: none;
  }
  
  /**
-     Обнуляем вертикальные внешние отступы параграфа,
-     объявляем локальную переменную для внешнего отступа вниз,
-     чтобы избежать взаимодействие с более сложным селектором
-    */
+  Zero out the vertical margins of the paragraph, declare a local variable for the margin down,
+  to avoid interaction with a more complex selector
+  */
  p {
    /* --paragraphMarginBottom: 24px; */
  
@@ -72,25 +67,24 @@
  }
  
  /**
-     Внешний отступ вниз для параграфа без атрибута class,
-     который расположен не последним среди своих соседних элементов
-    */
+  The outer margin down for a paragraph without a class attribute that is not the last among its neighbors
+  */
  p:where(:not([class]):not(:last-child)) {
    margin-bottom: var(--paragraphMarginBottom);
  }
  
  
  /**
-     Упрощаем работу с изображениями
-    */
+  Making it easier to work with images
+  */
  img {
    display: block;
    max-width: 100%;
  }
  
  /**
-     Наследуем свойства шрифт для полей ввода
-    */
+  Inherit font properties for input fields
+  */
  input,
  textarea,
  select,
@@ -99,36 +93,36 @@
  }
  
  html {
-   /**
-       Пригодится в большинстве ситуаций
-       (когда, например, нужно будет "прижать" футер к низу сайта)
-      */
+/**
+  It will be useful in most situations (for example, when you need to "press" 
+  the footer to the bottom of the site)
+  */
    height: 100%;
  }
  
  /**
-     Плавный скролл
-    */
+  Smooth scrolling
+  */
  html,
  :has(:target) {
    scroll-behavior: smooth;
  }
  
  body {
-   /**
-       Пригодится в большинстве ситуаций
-       (когда, например, нужно будет "прижать" футер к низу сайта)
-      */
+/**
+  It will be useful in most situations (for example, when you need to "press" 
+  the footer to the bottom of the site)
+  */
    min-height: 100%;
-   /**
-       Унифицированный интерлиньяж
-      */
-   line-height: 1.5;
+/**
+  Unified leading
+  */
+  line-height: 1.5;
  }
  
  /**
-     Приводим к единому цвету svg-элементы
-    */
+  Bringing svg elements to a single color
+  */
  svg *[fill] {
    fill: currentColor
  }
@@ -138,8 +132,8 @@
  }
  
  /**
-     Чиним баг задержки смены цвета при взаимодействии с svg-элементами
-    */
+  Fixing a bug with delayed color change when interacting with svg elements
+  */
  svg * {
    transition-property: fill, stroke;
  }

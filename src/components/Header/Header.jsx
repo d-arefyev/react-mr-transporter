@@ -76,7 +76,7 @@ const Header = ({ cartItems = [] }) => {
 
             <LoginButton onClick />
 
-            {/* Корзина */}
+            {/* Cart */}
             <NavLink to="/cart" className={styles.cartIcon}>
               <img src={cartIcon} alt="Cart" />
               {cartItemsCount > 0 && (
@@ -84,7 +84,7 @@ const Header = ({ cartItems = [] }) => {
               )}
             </NavLink>
 
-            {/* Кнопка бургер для мобильного меню */}
+            {/* Burger button for mobile menu */}
             {isMobile && !isMenuOpen && (
               <button className={styles.burgerButton} onClick={handleMenuToggle}>
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -98,7 +98,7 @@ const Header = ({ cartItems = [] }) => {
         </div>
       </div>
 
-      {/* Кнопка закрытия меню для мобильного устройства */}
+      {/* Close menu button for mobile device */}
       {isMobile && isMenuOpen && (
         <button className={styles.closeButton} onClick={handleMenuToggle}>
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -108,7 +108,7 @@ const Header = ({ cartItems = [] }) => {
         </button>
       )}
 
-      {/* Мобильное меню */}
+      {/* Mobile menu */}
       {isMobile && isMenuOpen && (
         <div className={`${styles.mobileOverlay} ${isMenuOpen ? styles.visible : ''}`}>
           <div className={styles.mobileMenuBody}>

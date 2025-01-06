@@ -2,18 +2,18 @@ import React from "react";
 import styles from "./AccentButton.module.scss";
 
 const AccentButton = ({
-  type = "button",          // Тип кнопки: "button", "submit", "reset"
-  label = "",               // Текст кнопки
-  icon = null,              // Иконка в виде JSX-элемента
-  onClick = () => {},       // Обработчик клика
-  disabled = false,         // Блокировка кнопки
-  className = "",           // Дополнительные классы
-  style = {},               // Inline-стили
-  iconPosition = "left",    // Позиция иконки: "left" или "right"
-  ariaLabel = label,        // ARIA-label для доступности
-  showLabel = true,         // Опционально скрыть/показать текст
-  tabIndex = 0,             // TabIndex для управления фокусом
-  role = "button",          // Роль элемента
+  type = "button",          // Type of button: "button", "submit", "reset"
+  label = "",               // Button text
+  icon = null,              // Icon as a JSX element
+  onClick = () => {},       // Click handler
+  disabled = false,         // Button lock
+  className = "",           // Additional classes
+  style = {},               // Inline styles
+  iconPosition = "left",    // Icon position: "left" or "right"
+  ariaLabel = label,        // ARIA-label for accessibility
+  showLabel = true,         // Optionally hide/show text
+  tabIndex = 0,             // TabIndex for focus control
+  role = "button",          // Role of the element
 }) => {
   return (
     <button

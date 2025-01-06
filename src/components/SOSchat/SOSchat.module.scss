@@ -42,11 +42,11 @@
     width: 100%;
     height: calc(
       100% - env(safe-area-inset-bottom)
-    ); /* Учёт высоты экрана и клавиатуры */
+    ); /* Taking into account the height of the screen and keyboard */
     box-shadow: none;
     border-radius: 0;
-    overflow-y: auto; /* Разрешаем скроллинг, если контент не помещается */
-    position: fixed; /* Фиксируем чат для адаптации к клавиатуре */
+    overflow-y: auto;
+    position: fixed;
   }
 }
 
