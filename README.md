@@ -14,26 +14,33 @@ Ich wurde eingeladen, an diesem Projekt zu arbeiten, um das visuelle Konzept zu 
 ```bash
 # Installing the package:
 npm create vite@latest
+```
 
+```bash
 # Installing dependencies:
 npm install
+```
 
+```bash
 # Launching the project:
 npm run dev
+```
 
+```bash
 # Assembling files for publication:
 npm run build
+```
 
+```bash
 # Installing Sass:
 npm install -D sass
+```
 
+```bash
 # Setting up access from all devices:
 npm run dev --host
-
+```
 *or in package.json ("dev": "vite --host")*
-
-Dependencies
-npm install react-router-dom
 
 [Live Demo](https://react-mr-transporter.vercel.app/)
 
