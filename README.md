@@ -11,33 +11,33 @@ Ich wurde eingeladen, an diesem Projekt zu arbeiten, um das visuelle Konzept zu 
 
 ## Vite Setup Instructions
 
+Installing the package:
 ```bash
-# Installing the package:
 npm create vite@latest
 ```
 
+Installing dependencies:
 ```bash
-# Installing dependencies:
 npm install
 ```
 
+Launching the project:
 ```bash
-# Launching the project:
 npm run dev
 ```
 
+Assembling files for publication:
 ```bash
-# Assembling files for publication:
 npm run build
 ```
 
+Installing Sass:
 ```bash
-# Installing Sass:
 npm install -D sass
 ```
 
+Setting up access from all devices:
 ```bash
-# Setting up access from all devices:
 npm run dev --host
 ```
 *or in package.json ("dev": "vite --host")*
