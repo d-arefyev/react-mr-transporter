@@ -6,7 +6,7 @@ Ich wurde eingeladen, an diesem Projekt zu arbeiten, um das visuelle Konzept zu 
 
 ## Skills
 
-•	Erstellung des Designs in Figma
+•	Erstellung des Designs in Figma 
 •	Aufbau der Benutzeroberfläche und der gesamten Anwendungsarchitektur
 
 [Live Demo](https://react-mr-transporter.vercel.app/)
