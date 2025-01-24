@@ -4,7 +4,13 @@ import Input from "../../components/Input/Input";
 import InputDate from "../../components/InputDate/InputDate";
 import CustomRadioButton from "../../components/Buttons/CustomRadioButton/CustomRadioButton";
 import AccentButton from "../../components/Buttons/AccentButton/AccentButton";
-import mainBg from '/image/main-bg.jpg';
+import Carousel from "../../components/Carousel/Carousel";
+import image1 from "/image/main-bg-1.jpg";
+import image2 from "/image/main-bg-2.jpg";
+import image3 from "/image/main-bg-3.jpg";
+import image4 from "/image/main-bg-4.jpg";
+import image5 from "/image/main-bg-5.jpg";
+// import mainBg from '/image/main-bg.jpg';
 
 import styles from "./HomePage.module.scss";
 
@@ -14,6 +20,8 @@ function HomePage() {
   const [wunschdatum, setWunschdatum] = useState("");
   const [transportType, setTransportType] = useState("Abschleppauftrag");
   const [formErrors, setFormErrors] = useState("");
+
+  const images = [image1, image2, image3, image4, image5];
 
   const handleDateChange = (e) => {
     setWunschdatum(e.target.value);
@@ -146,7 +154,8 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className={styles.mainBg} style={{ backgroundImage: `url(${mainBg})` }}></div>
+      <Carousel images={images} />
+      {/* <div className={styles.mainBg} style={{ backgroundImage: `url(${mainBg})` }}></div> */}
     </div>
   );
 }
